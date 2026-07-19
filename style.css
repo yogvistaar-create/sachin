@@ -14,7 +14,6 @@
     padding:0;
     box-sizing:border-box;
 }
-
 html{
     scroll-behavior:smooth;
 }
@@ -32,7 +31,6 @@ body{
     line-height:1.7;
 
 }
-
 /* Container */
 
 .container{
@@ -44,9 +42,7 @@ body{
     margin:auto;
 
 }
-
 /* Links */
-
 a{
 
     text-decoration:none;
@@ -54,7 +50,6 @@ a{
     color:inherit;
 
 }
-
 /* Images */
 
 img{
