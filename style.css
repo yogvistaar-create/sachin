@@ -1,85 +1,116 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FAFAF7;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#ffffff;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#2E7D32;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-size:17px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2E7D32;
+}
+
+.btn{
+    background:#2E7D32;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:40px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1B5E20;
+}
+
 /* Hero Section */
 
 .hero{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:80px 8%;
-
-min-height:90vh;
-
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    min-height:90vh;
 }
 
 .hero-text{
-
-width:50%;
-
+    width:50%;
 }
 
 .hero-text h1{
-
-font-size:60px;
-
-line-height:1.2;
-
-margin-bottom:20px;
-
-color:#1d1d1d;
-
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+    color:#1d1d1d;
 }
 
 .hero-text p{
-
-font-size:20px;
-
-line-height:1.8;
-
-margin-bottom:35px;
-
-color:#555;
-
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+    color:#555;
 }
 
 .hero-btn{
-
-display:inline-block;
-
-background:#2E7D32;
-
-color:white;
-
-padding:18px 40px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-size:18px;
-
-font-weight:600;
-
+    display:inline-block;
+    background:#2E7D32;
+    color:white;
+    padding:18px 40px;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
 }
 
 .hero-btn:hover{
-
-background:#1B5E20;
-
+    background:#1B5E20;
 }
 
 .hero-image{
-
-width:45%;
-
+    width:45%;
 }
 
 .hero-image img{
-
-width:100%;
-
-border-radius:20px;
-
+    width:100%;
+    border-radius:20px;
 }
