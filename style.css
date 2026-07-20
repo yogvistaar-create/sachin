@@ -106,34 +106,61 @@ img{
 /* =====================================================
    PREMIUM NAVBAR V2
 ===================================================== */
-
-.header{
+ .header{
     position:fixed;
     top:0;
     left:0;
     width:100%;
     z-index:1000;
-    transition:0.35s ease;
+    transition:.35s ease;
 }
 
+.header.scrolled{
+
+    padding-top:0;
+
+}
+
+.header.scrolled .nav-container{
+
+    margin-top:8px;
+
+    padding:12px 30px;
+
+    background:rgba(255,255,255,.92);
+
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+
+}
 .nav-container{
-    max-width:1300px;
-    margin:auto;
-    padding:18px 40px;
-    display:flex;
-    justify-content:space-between;
+
+    width:min(92%,1320px);
+
+    margin:18px auto;
+
+    padding:16px 32px;
+
+    display:grid;
+
+    grid-template-columns:auto 1fr auto;
+
     align-items:center;
 
-    background:rgba(255,255,255,.85);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    gap:40px;
+
+    background:rgba(255,255,255,.72);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.45);
 
     border-radius:18px;
-    margin-top:15px;
 
-    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:.35s;
+
 }
-
 /* Logo */
 
 .logo{
@@ -155,14 +182,26 @@ img{
 /* Navigation */
 
 .navbar{
+
     display:flex;
-    align-items:center;
+
+    justify-content:center;
+
 }
 
+
 .nav-links{
+
     display:flex;
-    gap:35px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:38px;
+
     list-style:none;
+
 }
 
 .nav-links li a{
@@ -215,7 +254,9 @@ img{
 
 .nav-btn{
 
-    margin-left:30px;
+    justify-self:end;
+
+    padding:14px 28px;
 
 }
 
