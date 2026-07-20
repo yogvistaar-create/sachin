@@ -103,54 +103,56 @@ img{
 
 }
 
-/* ==========================
-        HEADER
-========================== */
+/* =====================================================
+   PREMIUM NAVBAR V2
+===================================================== */
 
 .header{
-
-    position:sticky;
-
+    position:fixed;
     top:0;
-
+    left:0;
     width:100%;
+    z-index:1000;
+    transition:0.35s ease;
+}
 
-    padding:20px 8%;
-
+.nav-container{
+    max-width:1300px;
+    margin:auto;
+    padding:18px 40px;
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    background:white;
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-radius:18px;
+    margin-top:15px;
 
-    z-index:999;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
 
+/* Logo */
+
+.logo{
+    text-decoration:none;
 }
 
 .logo h2{
-
     color:#2E7D32;
-
-    font-size:32px;
-
+    font-size:34px;
     font-weight:700;
-
+    line-height:1;
 }
 
 .logo span{
-
-    font-size:13px;
-
     color:#777;
-
+    font-size:13px;
 }
-/* ==========================
-      NAVBAR
-========================== */
+
+/* Navigation */
 
 .navbar{
     display:flex;
@@ -159,74 +161,97 @@ img{
 
 .nav-links{
     display:flex;
-    list-style:none;
     gap:35px;
+    list-style:none;
 }
 
 .nav-links li a{
+
     position:relative;
+
+    color:#222;
+
     font-weight:500;
+
     transition:.3s;
+
 }
 
 .nav-links li a:hover,
 .nav-links li a.active{
+
     color:#2E7D32;
+
 }
 
 .nav-links li a::after{
+
     content:"";
+
     position:absolute;
+
     left:0;
-    bottom:-6px;
+
+    bottom:-8px;
+
     width:0;
+
     height:2px;
+
     background:#2E7D32;
+
     transition:.3s;
+
 }
 
 .nav-links li a:hover::after,
 .nav-links li a.active::after{
+
     width:100%;
+
+}
+
+/* CTA */
+
+.nav-btn{
+
+    margin-left:30px;
+
 }
 
 /* Hamburger */
 
 .menu-toggle{
+
     display:none;
-    flex-direction:column;
-    gap:6px;
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    background:none;
+
     cursor:pointer;
+
 }
 
 .menu-toggle span{
+
+    display:block;
+
     width:28px;
+
     height:3px;
+
+    margin:6px auto;
+
+    border-radius:30px;
+
     background:#2E7D32;
-    border-radius:10px;
+
     transition:.35s;
-}
-nav ul{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:35px;
-
-}
-
-nav ul li a{
-
-    font-weight:500;
-
-    transition:.3s;
-
-}
-
-nav ul li a:hover{
-
-    color:#2E7D32;
 
 }
 
