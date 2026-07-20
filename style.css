@@ -8,7 +8,11 @@ html{
 }
 
 body{
+body.menu-open{
 
+    overflow:hidden;
+
+}
     font-family:'Poppins',sans-serif;
 
     background:#FAFAF7;
